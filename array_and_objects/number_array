@@ -1,0 +1,13 @@
+// . Given an array, return a new array that only includes the numbers.
+
+// const arr = [1, 2, "a", true, {}, undefined, 55, false, "hi", null, 166,
+// NaN];
+// // [1, 2, 55, 166]
+
+
+function numberArray(arr) {
+    return arr.filter(element => typeof element === "number");
+}
+const arr = [1, 2, "lol", null, undefined, "kfdsakll", 3, 4, 5]
+const new_arr = numberArray(arr)
+console.log(new_arr)
